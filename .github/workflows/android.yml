@@ -1,6 +1,6 @@
 name: Build Android APK
 
-on:
+于:
   workflow_dispatch:
 
 jobs:
@@ -33,4 +33,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: apk
-          path: src-tauri/gen/android/app/build/outputs/apk/debug/*.apk
+          path: src-tauri/gen/android/app/build/outputs/**/*.apk
